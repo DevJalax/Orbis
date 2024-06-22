@@ -3,15 +3,23 @@ package com.scm.Supply.chain.apis.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.scm.Supply.chain.apis.Entity.Email;
+import com.scm.Supply.chain.apis.Entity.Notification;
 import com.scm.Supply.chain.apis.Repo.EmailRepository;
 
 @Service
 public class EmailService {
 
     private final EmailRepository emailRepository;
+    
+    private Email email = null;
+    
+    @Autowired
+    private JavaMailSender javaMailSender;
 
     @Autowired
     public EmailService(EmailRepository emailRepository) {
@@ -45,4 +53,14 @@ public class EmailService {
     public void deleteEmail(Long id) {
         emailRepository.deleteById(id);
     }
+    
+    public void send(Notification notify) {
+    	email = emailRepository.findEmailById(notify.getId());
+    	SimpleMailMessage mailMessage = new SimpleMailMessage();
+    	mailMessage.setTo(email.getTo());
+    	mailMessage.setSubject(email.getSubject());
+    	mailMessage.setText(email.getBody());
+    	javaMailSender.send(mailMessage);
+    }
+    
 }

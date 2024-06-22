@@ -18,6 +18,9 @@ public class Email {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    @Column(nullable = false)
+    private String To;
 
     @Column(nullable = false)
     private String subject;
@@ -69,6 +72,14 @@ public class Email {
 
 	public void setStatus(EmailStatus status) {
 		this.status = status;
+	}
+
+	public String getTo() {
+		return To;
+	}
+
+	public void setTo(String to) {
+		To = to;
 	}
 
 }
