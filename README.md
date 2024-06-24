@@ -1,4 +1,4 @@
-# SCM (Supply Chain Management) and CRM (Customer Relationship Management)
+# ERP (Enterprise Resource Planning)
 
 I ) Different services under this SCM api's : 
 
@@ -31,3 +31,18 @@ Analytics and Reporting Service: This service would provide advanced analytics a
 Authentication and Authorization Service: This service would handle user authentication, authorization, and access control across the CRM system. [yet to be developed]
 
 Notification Service: This service would be responsible for sending notifications, alerts, and updates to users and customers via email, SMS, or other channels
+
+III) Other ERP apis :
+
+Financial Management Service: This service would handle all financial operations such as accounts payable and receivable, general ledger, budgeting, forecasting, and expense management. It would provide comprehensive financial reporting and analytics.[done]
+
+Human Resource Management Service: This service would manage employee data, payroll processing, time and attendance tracking, performance management, and training and development. It would streamline HR-related operations and provide workforce analytics.[done]
+
+Manufacturing and Production Management Service: This service would handle production planning and control, quality management, maintenance and asset management, shop floor control, and product costing and pricing. It would optimize manufacturing processes and provide real-time production insights.
+
+Project Management Service: This service would enable project planning and scheduling, resource allocation, task management, collaboration, and project reporting. It would help organizations effectively manage projects and track their progress. save's project in Trello.
+
+Business Intelligence and Reporting Service: This service would integrate data from across the organization, provide real-time dashboards and analytics, enable ad-hoc reporting, and deliver predictive insights to support data-driven decision making. i need to integrate these api's into power-bi.[pending development]
+
+Workflow and Process Automation Service: This service would streamline business processes through automated approval workflows, document management, and collaboration tools. It would help optimize operations and improve efficiency. use temporal and rpa to accomplish this task.
+[pending development]
