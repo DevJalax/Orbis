@@ -46,3 +46,15 @@ Business Intelligence and Reporting Service: This service would integrate data f
 
 Workflow and Process Automation Service: This service would streamline business processes through automated approval workflows, document management, and collaboration tools. It would help optimize operations and improve efficiency. use temporal and rpa to accomplish this task.
 [pending development]
+
+Document Microservice: Handles the generation, storage, and management of various financial and business documents within the ERP system.
+ 
+Loan Microservice: Manages the loan-related processes and transactions within the ERP system. 
+
+Investment Microservice: Handles the investment-related functionalities and data within the ERP system. 
+ 
+Log Microservice: Records and manages the financial and system-related logs within the ERP system. 
+ 
+Authentication and Authorization Microservice: Handles the authentication and authorization processes for users and services within the ERP system.
+
+E-commerce microservice: Provides the online storefront, shopping cart, and checkout functionality
