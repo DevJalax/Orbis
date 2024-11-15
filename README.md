@@ -1,33 +1,22 @@
 # ERP (Enterprise Resource Planning)
 
-I ) Different services under this SCM api's : 
+1. Order and Inventory Management Service:
+Combines Order Service (order-id mapping, product details) and Inventory Service (supplier inventory).
 
-Order service (manages order and product details) [need to fix order-id based mapping]
+2. Delivery and Shipping Service:
+Combines Shipping Service (shipping details, estimated delivery date) and Delivery Service (Google Maps tracking, vehicle movement, delivery status updates).
 
-Inventory service (manages supplier's inventory) (done all working)
+3. Invoice and Payment Service:
+Combines Invoice Service (bill generation) and Payment Gateway Integration (payment processing via the switch).
 
-Shipping service (has the shipping details) [estimated delivery date should be min 2-3 days of purchase]
+4. Customer Relationship Management (CRM) Service:
+Combines:
+Customer Management (profiles, segmentation, analytics).
+Lead and Opportunity Management (sales pipeline, lead conversion).
+Marketing Automation (campaigns, email marketing).
 
-Invoice service (generate bill) 
+5. Manufacturing and Production Service:
+Handles Manufacturing and Production Management (planning, quality control, shop floor, and real-time insights).
 
-Delivery service (track where the order is using google maps) (track by order id or shipment number)(like swiggy we need to track where the order is like that vehicle moving kind of) [need to save delivery statuses of orders in delivery table]
-
-Jira integration for customer issue management 
-
-Payment gateway integration [our switch]
-
-
-II) Different services under this CRM api's :
-
-Customer Management Service: This service would handle all operations related to customer data, such as creating, updating, and retrieving customer profiles. It would also manage customer segmentation and provide customer analytics.
-
-Lead and Opportunity Management Service: This service would be responsible for managing leads, opportunities, and the sales pipeline. It would handle lead generation, qualification, and conversion to opportunities
-
-Marketing Automation Service: This service would handle marketing campaigns, email marketing, and lead nurturing. It would integrate with the lead and opportunity management service
-
-
-III) Other ERP apis :
-
-
-Manufacturing and Production Management Service: This service would handle production planning and control, quality management, maintenance and asset management, shop floor control, and product costing and pricing. It would optimize manufacturing processes and provide real-time production insights.
-
+6. Issue Management Service:
+Includes Jira Integration for customer issue tracking and management.
