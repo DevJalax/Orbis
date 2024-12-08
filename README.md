@@ -24,7 +24,7 @@ Includes Jira Integration for customer issue tracking and management.
 
 # Relation between different services :
 
-[service-flow](scm.png)
+![service-flow](scm.png)
 
 # DB schema ER diagram :
 
