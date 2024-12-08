@@ -20,3 +20,12 @@ Handles Manufacturing and Production Management (planning, quality control, shop
 
 6. Issue Management Service:
 Includes Jira Integration for customer issue tracking and management.
+
+
+# Relation between different services :
+
+[service-flow](scm.png)
+
+# DB schema ER diagram :
+
+![Architecture Diagram](scm-ER.png)
