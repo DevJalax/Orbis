@@ -29,3 +29,7 @@ Includes Jira Integration for customer issue tracking and management.
 # DB schema ER diagram :
 
 ![Architecture Diagram](scm-ER.png)
+
+# HLD
+
+![High level design](scm2.png)
